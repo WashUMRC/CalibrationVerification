@@ -11,7 +11,7 @@ system(sysLine);
 sysLine = ['md "' saveFolder '\MicroCT\' date '"'];
 saveFolder = [saveFolder '\MicroCT\' date '\'];
 system(sysLine);
-f = ftp('10.21.24.204','microct','mousebone4');
+f = ftp('10.21.24.204','microct','mousebone4','System','OpenVMS');
 ascii(f);
 disp(f)
 cDir = cd(f,'dk0');
@@ -128,7 +128,7 @@ system(sysLine);
 sysLine = ['md "' saveFolder '\VivaCT\' date '"'];
 saveFolder = [saveFolder '\VivaCT\' date '\'];
 system(sysLine);
-f = ftp('10.21.24.203','microct','mousebone4');
+f = ftp('10.21.24.203','microct','mousebone4','System','OpenVMS');
 disp(f)
 cDir = cd(f,'dk0');
 cDir = cd(f,'data');
