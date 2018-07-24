@@ -5,7 +5,7 @@ clear all;clc;close all;
 
 %Retrieve all of the quality check outputs
 storeFolder = pwd;
-saveFolder = ['J:\Silva''s Lab\Lab People folders\Daniel Leib\CT Quality Check Results'];
+saveFolder = ['J:\Silva''s Lab\P30 Core Center\CT Quality Check Results'];
 sysLine=['del ' storeFolder '\*.txt'];
 system(sysLine);
 sysLine = ['md "' saveFolder '\MicroCT\' date '"'];
