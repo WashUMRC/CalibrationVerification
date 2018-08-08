@@ -101,7 +101,7 @@ hold off;
 saveas(h,[saveFolder 'Last 20 weekly values of Mean 5 calibration scans for microCT 40.png']);
 close('all');
 
-a=[-15 100 209 414 797];%default rod values
+a=[-15 100 209 414 791];%default rod values
 for i = 1:length(number(length(number)-20:length(number),1))
     h = figure('Visible','Off');
     set(h,'Position',get(0,'Screensize'));
@@ -132,7 +132,7 @@ f = ftp('10.21.24.203','microct','mousebone4','System','OpenVMS');
 disp(f)
 cDir = cd(f,'dk0');
 cDir = cd(f,'data');
-cDir = cd(f,'00000451');
+cDir = cd(f,'00000584');
 directories = dir(f);
 for i = 1:length(directories)
     tf = directories(i).isdir;
@@ -216,7 +216,7 @@ legend('Values','Over','Under');
 hold off;
 saveas(h,[saveFolder 'Last 10 weekly values of Mean 5 calibration scans for VivaCT 40' '.png']);
 
-a=[-15 100 209 414 797];%default rod values
+a=[-15 100 209 414 791];%default rod values
 for i = 1:length(number(:,1))
     h = figure('Visible','Off');
     set(h,'Position',get(0,'Screensize'));
